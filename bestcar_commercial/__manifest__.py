@@ -17,33 +17,19 @@ Long description of module's purpose
     # for the full list
     'category': 'Uncategorized',
     'version': '0.1',
+
     # any module necessary for this one to work correctly
-    'depends': ['base','product','sale_management','project','hr','purchase','stock','account'],
+    'depends': ['base'],
 
     # always loaded
     'data': [
-        'security/res_groups.xml',
-        'security/ir.model.access.csv',
-        'data/brand_data.xml',
-        'data/model_data.xml',
-        'data/vehicle_option_data.xml',
-        'data/department_data.xml',
-        'views/vehicle_menu.xml',
-        'views/product_template.xml',
-        'views/vehicle_brand_views.xml',
-        'views/vehicle_model_views.xml',
-        'views/vehicle_type_views.xml',
-        'views/project_project_views.xml',
-        'views/project_task_views.xml',
-        'views/purchase_order_views.xml',
-        'views/vehicle_option_views.xml',
-        'reports/vehicle_report.xml',
-        'reports/vehicle_templates.xml',
+        # 'security/ir.model.access.csv',
+        'views/views.xml',
+        'views/templates.xml',
     ],
     # only loaded in demonstration mode
     # 'demo': [
     #     'demo/demo.xml',
     # ],
-    "application": True,
-    "sequence": -100,
 }
+
